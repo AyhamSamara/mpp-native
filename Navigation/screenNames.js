@@ -11,6 +11,6 @@ export const PREVIOUS_ORDER = "PreviousOrder";
 
 // Shop
 export const SHOP = "Shop";
-export const COFFEESHOPS = "Coffeeshops";
+export const ITEMS = "Items";
 export const COFFEESHOP = "Coffeeshop";
 export const CART = "Cart";

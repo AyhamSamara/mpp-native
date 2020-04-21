@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { loadAsync } from "expo-font";
 import { Spinner } from "native-base";
+import { Ionicons } from "@expo/vector-icons";
 
 // Navigation
 import RootNavigator from "./Navigation";

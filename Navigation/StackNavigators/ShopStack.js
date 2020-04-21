@@ -5,7 +5,7 @@ import CoffeeList from "../../Components/CoffeeList";
 import CoffeeDetail from "../../Components/CoffeeDetail";
 
 // Screens
-import { COFFEESHOPS, COFFEESHOP } from "../screenNames";
+import { ITEMS, COFFEESHOP } from "../screenNames";
 
 // Config
 import screenOptions from "../screenOptions";
@@ -14,8 +14,8 @@ const { Navigator, Screen } = createStackNavigator();
 
 export default function ShopStack() {
   return (
-    <Navigator initialRouteName={COFFEESHOPS} screenOptions={screenOptions}>
-      <Screen name={COFFEESHOPS} component={CoffeeList} />
+    <Navigator initialRouteName={ITEMS} screenOptions={screenOptions}>
+      <Screen name={ITEMS} component={CoffeeList} />
       <Screen
         name={COFFEESHOP}
         component={CoffeeDetail}

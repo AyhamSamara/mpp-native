@@ -9,7 +9,7 @@ import instance from "./instance";
 const setCurrentUser = (token) => (dispatch) => {
   setAuthToken(token);
   if (!token) {
-    dispatch(setOrders([]));
+    // dispatch(setOrders([]));
     AsyncStorage.removeItem("history");
   }
   dispatch({

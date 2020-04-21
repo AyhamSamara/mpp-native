@@ -1,6 +1,6 @@
 import instance from "./instance";
 
-import { SET_ITEMS } from "./types";
+import { SET_ITEMS } from "./actionTypes";
 
 export const getItems = () => async (dispatch) => {
   try {

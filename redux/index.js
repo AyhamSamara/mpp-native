@@ -12,7 +12,7 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-store.dispatch(getCoffeeShops());
+store.dispatch(getItems());
 store.dispatch(checkForToken());
 // store.dispatch(checkForOrderHistory());
 

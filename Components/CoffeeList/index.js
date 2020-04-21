@@ -5,15 +5,11 @@ import { connect } from "react-redux";
 // Component
 import CoffeeItem from "./CoffeeItem";
 
-const CoffeeList = ({ coffeeshops, loading, navigation }) => {
+const ItemList = ({ items, loading, navigation }) => {
   if (loading) return <Spinner color="rgb(20,90,100)" />;
 
-  const shopList = coffeeshops.map(coffeeshop => (
-    <CoffeeItem
-      coffeeshop={coffeeshop}
-      key={coffeeshop.name}
-      navigation={navigation}
-    />
+  const shopList = items.map((item) => (
+    <CoffeeItem item={item} key={item.id} navigation={navigation} />
   ));
 
   return (
@@ -23,9 +19,9 @@ const CoffeeList = ({ coffeeshops, loading, navigation }) => {
   );
 };
 
-const mapStateToProps = ({ coffeeshops }) => ({
-  coffeeshops,
-  loading: !coffeeshops.length
+const mapStateToProps = ({ items }) => ({
+  items,
+  // loading: !coffeeshops.length,
 });
 
-export default connect(mapStateToProps)(CoffeeList);
+export default connect(mapStateToProps)(ItemList);
